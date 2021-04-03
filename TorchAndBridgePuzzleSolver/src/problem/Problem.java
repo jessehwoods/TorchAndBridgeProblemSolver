@@ -26,11 +26,78 @@ public class Problem {
 	/**
 	 * Tracks position of the torch. Uses an array that contains the 
 	 */
-	private String torchLocation;
+	private Location torchLocation;
 	
 	/**
 	 * Tracks how much time has been spent moving so far.
 	 */
 	private int timeSpent;
+
+	/**
+	 * Constructor for a problem object giving a starting Array of numbers to
+	 * represent the movers.
+	 */
+	public Problem(int[] startSide) {
+		
+	}
+	
+	//TODO: Finish paramaterized constructor.
+	public Problem(int[] startSide, int[] targetSide, int timeSpent, ) {
+		
+	}
+	
+	
+	private Side getStartSide() {
+		return startSide;
+	}
+
+
+
+	private void setStartSide(Side startSide) {
+		this.startSide = startSide;
+	}
+
+
+
+	private Side getTargetSide() {
+		return targetSide;
+	}
+
+
+
+	private void setTargetSide(Side targetSide) {
+		this.targetSide = targetSide;
+	}
+
+
+
+	private Location getTorchLocation() {
+		return torchLocation;
+	}
+
+
+
+	private void setTorchLocation(Location torchLocation) {
+		this.torchLocation = torchLocation;
+	}
+
+
+
+	private int getTimeSpent() {
+		return timeSpent;
+	}
+
+
+
+	private void setTimeSpent(int timeSpent) {
+		this.timeSpent = timeSpent;
+	}
+
+
+
+	private enum Location {
+		START_SIDE,
+		TARGET_SIDE
+	}
 
 }
