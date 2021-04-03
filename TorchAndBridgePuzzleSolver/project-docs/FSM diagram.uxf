@@ -1,0 +1,20 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><help_text>Torch is on target side,
+faster mover on target side, and
+second fastest mover on start side.</help_text><element><id>UMLSpecialState</id><coordinates><x>90</x><y>40</y><w>20</w><h>20</h></coordinates><panel_attributes>type=initial</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>690</x><y>40</y><w>110</w><h>30</h></coordinates><panel_attributes>lt=-&gt;</panel_attributes><additional_attributes>10;10;90;10</additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>50</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=-&gt;</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>UMLState</id><coordinates><x>550</x><y>260</y><w>180</w><h>60</h></coordinates><panel_attributes>Torch is on start side and 
+fastest mover is on target side.</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>510</x><y>30</y><w>190</w><h>50</h></coordinates><panel_attributes>Solved</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>30</x><y>140</y><w>210</w><h>60</h></coordinates><panel_attributes>
+Torch is on start side and 
+two fastest movers are on start side.
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>550</x><y>130</y><w>190</w><h>70</h></coordinates><panel_attributes>Torch is on target side and 
+two fastest movers on target side</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>140</y><w>160</w><h>50</h></coordinates><panel_attributes>lt=-&gt;
+Fastest two movers 
+to target side</panel_attributes><additional_attributes>10;20;140;20</additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>190</y><w>140</w><h>90</h></coordinates><panel_attributes>lt=-&gt;
+Move second fastest 
+mover to start side</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>310</y><w>160</w><h>100</h></coordinates><panel_attributes>lt=-&gt;
+Move slowest movers to 
+target side</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>780</x><y>40</y><w>20</w><h>20</h></coordinates><panel_attributes>type=final</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>550</x><y>390</y><w>210</w><h>90</h></coordinates><panel_attributes>Torch is on target side,
+faster mover on target side, and
+second faster mover on start side.</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>190</y><w>370</w><h>270</h></coordinates><panel_attributes>lt=-&gt;
+Fastest mover to start side.</panel_attributes><additional_attributes>350;250;10;250;10;10</additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>370</x><y>140</y><w>40</w><h>40</h></coordinates><panel_attributes>type=decision</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>140</y><w>170</w><h>50</h></coordinates><panel_attributes>lt=-&gt;
+Some movers not on
+target side</panel_attributes><additional_attributes>10;20;150;20</additional_attributes></element><element><id>Relation</id><coordinates><x>380</x><y>50</y><w>160</w><h>110</h></coordinates><panel_attributes>lt=-&gt;
+All movers on target side</panel_attributes><additional_attributes>10;90;10;10;130;10</additional_attributes></element></diagram>
