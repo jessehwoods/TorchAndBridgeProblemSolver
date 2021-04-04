@@ -24,7 +24,7 @@ public class Problem {
 	private Side targetSide;
 	
 	/**
-	 * Tracks position of the torch as a string, using either "Start" or "Target"
+	 * Tracks position of the torch as an enum defining possible locations.
 	 */
 	private Location torchLocation;
 	
@@ -43,7 +43,7 @@ public class Problem {
 				0,
 				Location.START_SIDE);
 	}
-	
+
 	/**
 	 * A parameterized constructor for the Problem object. Does additional checks to make
 	 * sure that the thing being input are usable.
@@ -55,7 +55,7 @@ public class Problem {
 	public Problem(int[] startSide, 
 			int[] targetSide, 
 			int timeSpent, 
-			Location torchLocation) {
+			Location sideToStart) {
 		
 	}
 	
