@@ -24,7 +24,7 @@ public class Problem {
 	private Side targetSide;
 	
 	/**
-	 * Tracks position of the torch. Uses an array that contains the 
+	 * Tracks position of the torch as a string, using either "Start" or "Target"
 	 */
 	private Location torchLocation;
 	
@@ -34,15 +34,28 @@ public class Problem {
 	private int timeSpent;
 
 	/**
-	 * Constructor for a problem object giving a starting Array of numbers to
-	 * represent the movers.
+	 * Constructor for a problem object taking a starting Array of numbers to
+	 * represent the movers. Everything else is set as a default starting position.
 	 */
 	public Problem(int[] startSide) {
-		
+		Problem(startSide,
+				new int[startSide.length],
+				0,
+				Location.START_SIDE);
 	}
 	
-	//TODO: Finish paramaterized constructor.
-	public Problem(int[] startSide, int[] targetSide, int timeSpent, ) {
+	/**
+	 * A parameterized constructor for the Problem object. Does additional checks to make
+	 * sure that the thing being input are usable.
+	 * @param startSide
+	 * @param targetSide
+	 * @param timeSpent
+	 * @param torchLocation
+	 */
+	public Problem(int[] startSide, 
+			int[] targetSide, 
+			int timeSpent, 
+			Location torchLocation) {
 		
 	}
 	
@@ -92,12 +105,10 @@ public class Problem {
 	private void setTimeSpent(int timeSpent) {
 		this.timeSpent = timeSpent;
 	}
-
-
-
-	private enum Location {
+	
+	public enum Location{
 		START_SIDE,
-		TARGET_SIDE
+		TARGET_SIDE;
 	}
 
 }
