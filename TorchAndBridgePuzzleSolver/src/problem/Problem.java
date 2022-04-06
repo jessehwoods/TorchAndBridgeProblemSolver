@@ -34,19 +34,7 @@ public class Problem {
 	private int timeSpent;
 
 	/**
-	 * Constructor for a problem object taking a starting Array of numbers to
-	 * represent the movers. Everything else is set as a default starting position.
-	 */
-	public Problem(int[] startSide) {
-		Problem(startSide,
-				new int[startSide.length],
-				0,
-				Location.START_SIDE);
-	}
-
-	/**
-	 * A parameterized constructor for the Problem object. Does additional checks to make
-	 * sure that the thing being input are usable.
+	 * A parameterized constructor for the Problem object. 
 	 * @param startSide
 	 * @param targetSide
 	 * @param timeSpent
@@ -56,6 +44,7 @@ public class Problem {
 			int[] targetSide, 
 			int timeSpent, 
 			Location sideToStart) {
+		this.startSide = new Side(startSide);
 		
 	}
 	
