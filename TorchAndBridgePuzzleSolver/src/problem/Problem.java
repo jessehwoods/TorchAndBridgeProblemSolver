@@ -12,14 +12,12 @@ package problem;
 public class Problem {
 	
 	/**
-	 * Array holding the Movers on the start side as ints representing their
-	 * speed. In ascending order of value.
+	 * A Side object representing the starting section of the problem.
 	 */
 	private Side startSide;
 	
 	/**
-	 * An array holding the Movers on the target side as ints representing their
-	 * speed.
+	 * A Side object representing the area that people need to be moved to in the problem.
 	 */
 	private Side targetSide;
 	
@@ -44,7 +42,6 @@ public class Problem {
 			int[] targetSide, 
 			int timeSpent, 
 			Location sideToStart) {
-		this.startSide = new Side(startSide);
 		
 	}
 	
