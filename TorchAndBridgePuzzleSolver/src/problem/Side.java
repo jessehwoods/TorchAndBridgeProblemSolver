@@ -37,31 +37,23 @@ public class Side {
 	
 	/**
 	 * Moves a mover from this Side to another Side, specified by index.
-	 * @param index is the index of the mover to be moved from this Side to the other.
+	 * @param movers is the values to be moved.
 	 * @param moveToHere is the Side that is going to have a mover sent to.
 	 */
-	public void moveTo(int index, Side moveToHere) {
+	public void moveTo(int[] movers, Side moveToHere) {
 		
 	}
 	
 
 	/**
 	 * Accepts a mover from the provided side and adds it to this Side. 
-	 * @param index is the index in the moveFromHere Side to move
+	 * @param movers is the values to be moved.
 	 * @param moveFromHere is the Side to move from to this one.
 	 */
-	public void moveFrom(int index, Side moveFromHere) {
+	public void moveFrom(int[] movers, Side moveFromHere) {
 		
 	}
 
-	/**
-	 * Returns the value of the mover stored at an index in the Side.
-	 * @param index index to return.
-	 * @return value stored at the provided index.
-	 */
-	public int get(int index) {
-		
-	}
 	
 	/**
 	 * Returns the number of movers kept in this side.
