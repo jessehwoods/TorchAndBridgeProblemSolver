@@ -41,6 +41,99 @@ public class SideTest {
 		
 	}
 	
+	@Test
+	public void testAddToEmpty() {
+		
+	}
 	
+	@Test
+	public void testAddFirst() {
+		
+	}
+	
+	@Test
+	public void testAddMiddle() {
+		
+	}
+	
+	@Test
+	public void testAddLast() {
+		
+	}
+	
+	@Test
+	public void testRemoveFromEmpty() {
+		
+	}
+	
+	@Test
+	public void testRemoveFromEmtpy() {
+		
+	}
+	
+	@Test
+	public void testRemoveFirst() {
+		
+	}
+	
+	@Test
+	public void testRemoveMiddle() {
+		
+	}
+	
+	@Test
+	public void testRemoveLast() {
+		
+	}
+	
+	@Test
+	public void testMoveToEmpty() {
+		
+	}
+	
+	@Test
+	public void testMoveToFirst() {
+		
+	}
+	
+	@Test
+	public void testMoveToMiddle() {
+		
+	}
+	
+	@Test
+	public void testMoveToLast() {
+		
+	}
+	
+	@Test
+	public void testInvalidMoveFromEmpty() {
+		
+	}
+	
+	@Test
+	public void testInvalidMoveFirst() {
+		
+	}
+	
+	@Test
+	public void testInvalidMoveMiddle() {
+		
+	}
+	
+	@Test
+	public void testInvalidMoveLast() {
+		
+	}
+	
+	@Test
+	public void testMoveToDuplicate() {
+		
+	}
+	
+	@Test
+	public void testMoveFromDuplicate() {
+		
+	}
 
 }
