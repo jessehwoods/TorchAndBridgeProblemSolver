@@ -41,7 +41,7 @@ public class Problem {
 	public Problem(int[] startSide, 
 			int[] targetSide, 
 			int timeSpent, 
-			Location sideToStart) {
+			Location torchLocation) {
 		
 	}
 	

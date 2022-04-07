@@ -17,4 +17,6 @@ public class Side {
 	 */
 	private int[] movers;
 
+	
+	
 }
