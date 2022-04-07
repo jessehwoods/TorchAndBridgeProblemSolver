@@ -1,2 +1,3 @@
 module TorchAndBridgePuzzleSolver {
+	requires junit;
 }
