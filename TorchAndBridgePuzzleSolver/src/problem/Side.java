@@ -1,13 +1,15 @@
 package problem;
 
-import java.util.HashMap;
 import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+import java.util.TreeMap;
 
 /**
  * Holds information on the sides of the bridge and methods allow the movers to be moved from one
  * Side to another.
- * Movers on a side are stored as ints representing their speed. They can be duplicates, but duplicates are not
- * distinguished from each other. 
+ * Movers on a side are stored as integers representing their speed. They can be duplicates, but duplicates are not
+ * distinguished from each other in any way. 
  * 
  * @author Jesse Woods
  *
@@ -16,7 +18,7 @@ public class Side {
 	
 	/**
 	 * Map holding the movers that are on this side of the bridge. 
-	 * Key represents the speed of the mover.
+	 * Key represents the speed of the mover. Maintained in sorted order.
 	 * Value represents how many of that speed there is, since a problem might involve multiples of the same speed.
 	 */
 	private Map<Integer, Integer> movers;
@@ -25,7 +27,7 @@ public class Side {
 	 * Default constructor that creates an empty Side.
 	 */
 	public Side() {
-		this.movers = new HashMap<Integer, Integer>();
+		this.movers = new TreeMap<Integer, Integer>();
 	}
 	
 	/**
@@ -69,7 +71,19 @@ public class Side {
 	public void remove(int mover) {
 		
 	}
+
+	@Override
+	public String toString() {
+		StringBuilder returnThisString = new StringBuilder(); 
+		returnThisString.append("[");
+		Set<Entry<Integer, Integer>> entries = movers.entrySet();
+		for (Entry e : entries) {
+			
+		}
+		returnThisString.append("]");
+		return returnThisString.toString();
+	}
 	
-	
+
 	
 }
