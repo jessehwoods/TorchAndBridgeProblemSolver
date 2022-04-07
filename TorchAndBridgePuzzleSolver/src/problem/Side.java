@@ -61,8 +61,6 @@ public class Side {
 	 */
 	public int size() {
 		
-	}
-	
-	
+	}	
 	
 }
