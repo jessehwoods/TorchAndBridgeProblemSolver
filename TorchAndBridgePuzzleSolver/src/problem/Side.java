@@ -3,7 +3,7 @@ package problem;
 /**
  * Holds information on the sides of the bridge and methods allow the movers to be moved from one
  * Side to another.
- * Movers on a side are stored as ints representing their speed, sorted in ascending order. 
+ * Movers on a side are stored as ints representing their speed. 
  * Position in the array is used to distinguish different movers with the same speed. 
  * 
  * @author Jesse Woods
