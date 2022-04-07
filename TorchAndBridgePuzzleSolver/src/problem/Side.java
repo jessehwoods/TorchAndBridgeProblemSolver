@@ -1,13 +1,13 @@
 package problem;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Holds information on the sides of the bridge and methods allow the movers to be moved from one
  * Side to another.
- * Movers on a side are stored as ints representing their speed. 
- * Position in the array is used to distinguish different movers with the same speed. 
+ * Movers on a side are stored as ints representing their speed. They can be duplicates, but duplicates are not
+ * distinguished from each other. 
  * 
  * @author Jesse Woods
  *
@@ -15,16 +15,17 @@ import java.util.List;
 public class Side {
 	
 	/**
-	 * Array holding the movers that are on this side of the bridge. Int value represents 
-	 * the speed of the mover. Kept in ascending order.
+	 * Map holding the movers that are on this side of the bridge. 
+	 * Key represents the speed of the mover.
+	 * Value represents how many of that speed there is, since a problem might involve multiples of the same speed.
 	 */
-	private List<Integer> movers;
+	private Map<Integer, Integer> movers;
 	
 	/**
 	 * Default constructor that creates an empty Side.
 	 */
 	public Side() {
-		this.movers = new ArrayList<Integer>();
+		this.movers = new HashMap<Integer, Integer>();
 	}
 	
 	/**
@@ -36,24 +37,14 @@ public class Side {
 	}
 	
 	/**
-	 * Moves a mover from this Side to another Side, specified by index.
+	 * Moves a group of movers from this Side to another Side specified by integer value of the
+	 * movers.
 	 * @param movers is the values to be moved.
 	 * @param moveToHere is the Side that is going to have a mover sent to.
 	 */
 	public void moveTo(int[] movers, Side moveToHere) {
 		
 	}
-	
-
-	/**
-	 * Accepts a mover from the provided side and adds it to this Side. 
-	 * @param movers is the values to be moved.
-	 * @param moveFromHere is the Side to move from to this one.
-	 */
-	public void moveFrom(int[] movers, Side moveFromHere) {
-		
-	}
-
 	
 	/**
 	 * Returns the number of movers kept in this side.
@@ -62,5 +53,23 @@ public class Side {
 	public int size() {
 		
 	}	
+	
+	/**
+	 * Adds a mover to this Side.
+	 * @param mover
+	 */
+	public void add(int mover) {
+		
+	}
+	
+	/**
+	 * Removes a mover from this Side.
+	 * @param mover
+	 */
+	public void remove(int mover) {
+		
+	}
+	
+	
 	
 }
