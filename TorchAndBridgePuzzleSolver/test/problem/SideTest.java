@@ -16,24 +16,24 @@ public class SideTest {
 	private static String emptySideString = "[]";
 	
 	/**
-	 * Array and expected returns of a Side to use in testing.
+	 * Array and expected returns of a Side with two movers to use in testing.
 	 */
 	private static int[] firstSide = {2, 8};
 	private static int firstSideSize = 2;
 	private static String firstSideString = "[2,8]";
 	
 	/**
-	 * Array and expected returns fo a Side to use in testing.
+	 * Array and expected returns for a Side with three movers to use in testing.
 	 */
-	private static int[] secondSide = {3, 7, 9, 10};
+	private static int[] secondSide = {3, 7, 10};
 	private static int secondSideSize = 4;
-	private static String secondSideString = "[3,7,9,10]";
-	private static String secondSideStringMinusFirst = "[7,9,10]";
-	private static String secondSideStringMinusMiddle = "[3,9,10]";
-	private static String secondSideStringMinusLast = "[3,7,9]";
+	private static String secondSideString = "[3,7,10]";
+	private static String secondSideStringMinusFirst = "[7,10]";
+	private static String secondSideStringMinusMiddle = "[3,10]";
+	private static String secondSideStringMinusLast = "[3,7]";
 	
 	/**
-	 * Integers that can be added to the firt, middle, and last location in either side 
+	 * Integers that can be added to the first, middle, and last location in either side 
 	 * above, assuming sorted order.
 	 */
 	private static int firstInt = 1;
@@ -155,12 +155,18 @@ public class SideTest {
 		
 		sideA.remove(secondSide[1]);
 		assertEquals(secondSideSize - 1, sideA.size());
-		assertEquals(secondSideStringMinusLast, sideA.toString());
+		assertEquals(secondSideStringMinusMiddle, sideA.toString());
 	}
 	
 	@Test
 	public void testRemoveLast() {
-		//TODO
+		Side sideA = new Side(secondSide);
+		assertEquals(secondSideSize, sideA.size());
+		assertEquals(secondSideString, sideA.toString());
+		
+		sideA.remove(secondSide[1]);
+		assertEquals(secondSideSize - 1, sideA.size());
+		assertEquals(secondSideStringMinusLast, sideA.toString());
 	}
 	
 	@Test
